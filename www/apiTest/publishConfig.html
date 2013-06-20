@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script type="text/javascript" src="/javascripts/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<script>
+		var post = {
+			'project_name' 	: 'service_us',
+			'config_name' 	: 'tinywall',
+			'version' 		: '1'
+		}
+		$.post("/index.php?controller=apis&action=publish_config", post, function(data)
+		{
+			console.log(data);
+		})
+	</script>
+</body>
+</html>
